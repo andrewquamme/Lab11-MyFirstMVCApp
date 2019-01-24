@@ -26,10 +26,7 @@ namespace MyFirstMVCApp
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            app.UseStaticFiles();
 
             app.UseMvc(routes =>
             {
@@ -38,7 +35,6 @@ namespace MyFirstMVCApp
                     template: "{controller=Home}/{action=index}/{id?}");
             });
 
-            app.UseStaticFiles();
         }
     }
 }
