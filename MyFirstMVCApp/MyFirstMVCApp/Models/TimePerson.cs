@@ -20,10 +20,10 @@ namespace MyFirstMVCApp.Models
         public void GetPersons()
         {
             //read file
-            
-            //parse to objects
+            //private static string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../wwwroot/personOfTheYear.csv");
+        //parse to objects
 
 
-        }
+    }
     }
 }
