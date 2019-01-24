@@ -19,6 +19,10 @@ namespace MyFirstMVCApp.Models
 
         public void GetPersons()
         {
+            //read file
+            
+            //parse to objects
+
 
         }
     }
