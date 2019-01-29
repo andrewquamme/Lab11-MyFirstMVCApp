@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyFirstMVCApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace MyFirstMVCApp.Controllers
 
         public IActionResult Results(int startYear, int endYear)
         {
-            return View();
+            return View(TimePerson.GetPersons(startYear, endYear));
         }
     }
 }
